@@ -7,9 +7,11 @@ gem 'rails', '4.2.4'
 gem 'mysql2'
 gem 'pg'
 gem 'devise'
-gem 'rails-api'
+# gem 'rails-api'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+gem "paperclip"
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
