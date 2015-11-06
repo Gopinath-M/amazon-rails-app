@@ -1,29 +1,28 @@
-<p id="notice"><%= notice %></p>
+<table class="table table-stribe">
+  <thead>
+    <tr class="success">
+      <th><strong>Name:</strong></th>
+      <th><strong>Description:</strong></th>
+      <th><strong>Price:</strong></th>
+      <th><strong>Quantity:</strong></th>
+      <th><strong>Image:</strong></th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="success">
+      <td><%= @product.name %></td>
+      <td><%= @product.description %></td>
+      <td><%= @product.price %></td>
+      <td><%= @product.quantity %></td>
+      <td><%=image_tag @product.image.url(:thumb) %></td>
+      <td>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
-
-<p>
-  <strong>Quantity:</strong>
-  <%= @product.quantity %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%=image_tag @product.image.url(:thumb) %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
