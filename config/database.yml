@@ -51,8 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: d29qu1f7p0om87
-  username: zomzmcwcyabbvp
-  password: zsyBXzUi4xQwlgt_rB5cdkh8yg
-  host: ec2-107-21-223-72.compute-1.amazonaws.com
-  port: 5432
+  database: amazon-rails-app_production
+  username: amazon-rails-app
+  password: <%= ENV['AMAZON-RAILS-APP_DATABASE_PASSWORD'] %>
